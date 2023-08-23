@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+}
+
+.body-text {
+    font-size: 20px;
+}
+
+/* header section */
+#header {
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    margin: 0;
+}
+
+.header-text{
+    font-family: 'Qwigley', cursive;
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.venue {
+    color: black;
+}
+
+.names {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.ribbons{
+    background-color: white;
+    padding: 5% 2%;
+    color: black;
+    border-radius: 1%;
+}
+
+/* story section */
+#story {
+    padding: 2rem 20%;
+    background-color: white;
+}
+
+ .story-gallery-section {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+} 
+
+.story-gallery-section img {
+    /* width: 120%;
+    padding: 1rem; */
+    /* display: block; */
+    display: block;
+    height: 100%;
+    width: 115%;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    /* margin-right: 5rem; */
+}    
+
+.our-story {
+    padding-top: 2rem;
+}
+
+
+.video {
+    width: 100%;
+    height: 500px;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+.read-more {
+    color: black;
+    font-size: 1rem;
+}
+
+.moreText {
+    display: none;
+}
+
+.show-more .moreText {
+    display: block;
+}
+
+.story-gallery-section2 img {
+    display: block;
+    height: 10%;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    margin-right: 8rem;
+    /* margin-left: 5rem; */
+}
+
+#rsvp {
+    background-color: black;
+    color: white;
+    padding: 2rem 4%;
+    font-weight: 100;
+    border-radius: 12%;
+}
+
+.thank-you-message {
+    text-align: center;
+    line-height: 2;
+}
+
+
+form label {
+    display: block;
+    margin-top: 10px;
+   
+  }
+
+  li {
+    color: white;
+    font-weight: 300;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"] 
+  
+  #fs-name, #ls-name, #email, #phoneNumber, #messageKnow, #messageAdvice {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 48%;
+    text-align: center;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: silver;
+  }
+
+.contact {
+    padding-right: 1%;
+    color: white;
+}  
+
+
+
+
+
+
+/* gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(15, 3rem);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-right: 11rem;
+}
+
+ .gallery img{
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10%;
+} 
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .9);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.gallery-section{
+    margin: 0;
+}
+
+
+
+/* footer section */
+#footer {
+    background-color: black;
+    text-align: center;
+    color:silver;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }    
+
+    .body-text {
+        font-size: 16px;
+    }
+            /* header section */
+        #header {
+            align-items: center;
+            display: block;
+        }
+
+        .header-photo {
+            width: 80%;
+            height: 80%;
+        }
+
+        .ribbons {
+            display: block;
+            padding: 10%;
+        }
+
+        .header-text{
+            font-size: 3rem;
+        }
+
+        /* story section */
+        #story {
+            padding: 2rem 15%;
+        }
+
+        .our-story{
+           margin-top: 5rem;
+        }
+
+        .story-gallery-section {
+            display: grid;
+            grid-template-columns: repeat(2, 15rem);
+            grid-gap: 6px;
+            justify-content: center;
+            align-content: center;
+            margin: 4rem;
+            padding-bottom: 1rem; 
+        } 
+
+         #player{
+            justify-content: center;
+            align-content: center;
+            width: 50%;
+            margin-right: 25%;
+        }
+
+        /* rsvp section */
+        #rsvp {
+        border-radius: 2%
+        }
+
+        .form {
+            display: block;
+        }
+
+        /* gallery section */
+        .gallery-section {
+            justify-content: center;
+            align-content: center;
+            width: 80%;
+            /* padding-right: 5rem; */
+        }
+
+        .gallery {
+            display: grid; 
+            grid-template-columns: repeat(5, 3rem);
+            grid-gap: 5px;
+            margin-left: 5rem;
+        }
+
+        #lightbox {
+            overflow-x: hidden;
+        }
+
+        #lightbox img {
+            max-width: 60%;
+            max-height: 90%;
+            padding: 4px;
+            background-color: black;
+            border: 2px solid white;
+            justify-content: center;
+            align-content: center;
+        }
+
+
+}
